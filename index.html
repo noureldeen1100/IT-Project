@@ -1,36 +1,36 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <title>Personal Course</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="main-header">
-      <h1>Personal Course Organizer</h1>
+    <header>
+      <span class="logo">Course Organizer</span>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="mycourses.html" target="_blank">My courses</a>
-        <a href="addcourse.html" target="_blank">Add course</a>
-        <a href="contactus.html" target="_blank">Contact us</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="my-courses.html">My courses</a>
+        <a href="add-course.html">Add course</a>
+        <a href="contact-us.html">Contact us</a>
       </nav>
     </header>
-    <article>
-      <div class="home-p">
-        <h2>WELCOME!</h2>
-        <p>
-          Organize your courses efficiently. Here you can view, manage, and add
-          your courses easily.<br />
-          Navigate using the menu above.
-        </p>
+
+    <main>
+      <h1 class="hero-h1">Welcome back</h1>
+      <p class="hero-p">
+        Organize your courses efficiently. View, manage, and track your progress
+        all in one place.
+      </p>
+      <div class="buttons">
+        <a href="my-courses.html" class="btn btn-primary">My courses</a>
+        <a href="add-course.html" class="btn btn-outline">Add a course</a>
       </div>
-      <img
-        src="images/pexels-roman-odintsov-5912280.jpg"
-        alt="someone organizing his course"
-        width="1000"
-        height="400"
-        class="someone-img"
-      />
-    </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Personal Course Organizer. All rights reserved.</p>
+    </footer>
   </body>
 </html>
