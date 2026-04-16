@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Course</title>
+    <link href="css/add-course.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <span class="logo">Course Organizer</span>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="my-courses.html">My courses</a>
+        <a href="add-course.html" class="active">Add course</a>
+        <a href="contact-us.html">Contact us</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2 class="add-course-h2">Add New Course</h2>
+        <p class="add-course-p">
+          Use the form below to add a new course to your schedule. Fill in the
+          course name, instructor, and credits, then click "Add Course" to save.
+        </p>
+        <form class="add-course">
+          <div class="course-name">
+            <label for="course-name">Course name</label>
+            <input
+              type="text"
+              id="course-name"
+              placeholder="Enter course name here"
+              required
+            />
+          </div>
+          <div class="row">
+            <div class="instructor">
+              <label for="instructor">Instructor</label>
+              <input
+                type="text"
+                id="instructor"
+                placeholder="Enter instructor name here"
+                required
+              />
+            </div>
+            <div class="credits">
+              <label for="credits">Credits</label>
+              <input
+                type="number"
+                id="credits"
+                min="1"
+                max="4"
+                placeholder="Enter number of credits here"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit">Add Course</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 Personal Course Organizer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
